@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speaking practice engine files</title>
+<style>
+  body { font-family: Arial, system-ui, sans-serif; color: #1E1A17; background: #FCFBF7; max-width: 46rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+  table { border-collapse: collapse; width: 100%; } td { border-top: 1px solid #DEDBD5; padding: .3rem .5rem .3rem 0; vertical-align: top; }
+  code { font-size: .9em; word-break: break-all; }
+</style>
+</head>
+<body>
+<h1>Speaking practice engine files</h1>
+<p>This site holds open-source speech recognition files for a speaking-practice tool used in a university course.
+The tool downloads them once into the student's browser and runs speech recognition there, on the student's own device.
+Students' audio is never sent to this site or anywhere else.</p>
+<p>There is nothing to use on this page itself. The files are plain downloads: about 56.9 MB in total
+(sherpa-onnx WebAssembly runtime 1.12.36, Moonshine v2 tiny English, Silero VAD). Files over 5 MB are split into
+numbered parts that the tool joins again; it checks the sha256 of every file and every part before use (see <a href="SHA256SUMS.txt">SHA256SUMS.txt</a>).</p>
+<h2>Licences</h2>
+<ul>
+      <li>sherpa-onnx WebAssembly runtime – Apache License 2.0 (<a href="LICENSES/sherpa-onnx-Apache-2.0.txt">licence text</a>, source: https://github.com/k2-fsa/sherpa-onnx)</li>
+      <li>Moonshine v2 tiny English speech recognition model – MIT License (<a href="LICENSES/moonshine-MIT.txt">licence text</a>, source: https://github.com/moonshine-ai/moonshine)</li>
+      <li>Silero voice activity detector – MIT License (<a href="LICENSES/silero-vad-MIT.txt">licence text</a>, source: https://github.com/snakers4/silero-vad)</li>
+</ul>
+<h2>Files</h2>
+<table>
+      <tr><td><code>vendor/sherpa-onnx/vad-asr/sherpa-onnx-wasm-main-vad-asr.js</code></td><td>0.1 MB</td></tr>
+      <tr><td><code>vendor/sherpa-onnx/vad-asr/sherpa-onnx-wasm-main-vad-asr.wasm.part1</code></td><td>4.0 MB</td></tr>
+      <tr><td><code>vendor/sherpa-onnx/vad-asr/sherpa-onnx-wasm-main-vad-asr.wasm.part2</code></td><td>4.0 MB</td></tr>
+      <tr><td><code>vendor/sherpa-onnx/vad-asr/sherpa-onnx-wasm-main-vad-asr.wasm.part3</code></td><td>4.0 MB</td></tr>
+      <tr><td><code>vendor/sherpa-onnx/vad-asr/sherpa-onnx-asr.js</code></td><td>0.1 MB</td></tr>
+      <tr><td><code>vendor/sherpa-onnx/vad-asr/sherpa-onnx-vad.js</code></td><td>0.0 MB</td></tr>
+      <tr><td><code>models/moonshine-v2-tiny-en/encoder.ort.part1</code></td><td>4.4 MB</td></tr>
+      <tr><td><code>models/moonshine-v2-tiny-en/encoder.ort.part2</code></td><td>4.4 MB</td></tr>
+      <tr><td><code>models/moonshine-v2-tiny-en/encoder.ort.part3</code></td><td>4.4 MB</td></tr>
+      <tr><td><code>models/moonshine-v2-tiny-en/decoder.ort.part1</code></td><td>4.3 MB</td></tr>
+      <tr><td><code>models/moonshine-v2-tiny-en/decoder.ort.part2</code></td><td>4.3 MB</td></tr>
+      <tr><td><code>models/moonshine-v2-tiny-en/decoder.ort.part3</code></td><td>4.3 MB</td></tr>
+      <tr><td><code>models/moonshine-v2-tiny-en/decoder.ort.part4</code></td><td>4.3 MB</td></tr>
+      <tr><td><code>models/moonshine-v2-tiny-en/decoder.ort.part5</code></td><td>4.3 MB</td></tr>
+      <tr><td><code>models/moonshine-v2-tiny-en/decoder.ort.part6</code></td><td>4.3 MB</td></tr>
+      <tr><td><code>models/moonshine-v2-tiny-en/decoder.ort.part7</code></td><td>4.3 MB</td></tr>
+      <tr><td><code>models/moonshine-v2-tiny-en/tokens.txt</code></td><td>0.5 MB</td></tr>
+      <tr><td><code>models/silero-vad/silero_vad.onnx</code></td><td>0.6 MB</td></tr>
+</table>
+</body>
+</html>
